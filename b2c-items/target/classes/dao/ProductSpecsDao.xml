@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.max.b2c.item.dao.ProductSpecsDao">
+    <insert id="insertSpecs" useGeneratedKeys="true" keyProperty="value_id">
+        insert into product_specs_value (specs_value,product_id,specs_id,is_sku)values
+        <foreach collection="list" item="item" index="index" separator=",">
+            <if test="item.is_sku ==1">
+                (#{item.specs_value,jdbcType=VARCHAR},
+                #{item.product_id,jdbcType=INTEGER},
+                #{item.specs_id,jdbcType=INTEGER},
+                #{item.is_sku,jdbcType=INTEGER})
+            </if>
+        </foreach>
+    </insert>
+</mapper>
+

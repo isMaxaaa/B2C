@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.max.b2c.mapper.UserLoginLogMapper">
+  <resultMap id="BaseResultMap" type="com.max.b2c.model.UserLoginLog">
+    <id column="log_id" jdbcType="INTEGER" property="log_id" />
+    <result column="user_id" jdbcType="INTEGER" property="user_id" />
+    <result column="login_time" jdbcType="TIMESTAMP" property="login_time" />
+    <result column="logout_time" jdbcType="TIMESTAMP" property="logout_time" />
+    <result column="login_ip" jdbcType="INTEGER" property="login_ip" />
+    <result column="gmt_create" jdbcType="TIMESTAMP" property="gmt_create" />
+    <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmt_modified" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    log_id, user_id, login_time, logout_time, login_ip, gmt_create, gmt_modified
+  </sql>
+  <select id="selectByExample" parameterType="com.max.b2c.model.UserLoginLogExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from user_login_log
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from user_login_log
+    where log_id = #{log_id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from user_login_log
+    where log_id = #{log_id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.max.b2c.model.UserLoginLogExample">
+    delete from user_login_log
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.max.b2c.model.UserLoginLog">
+    insert into user_login_log (log_id, user_id, login_time, 
+      logout_time, login_ip, gmt_create, 
+      gmt_modified)
+    values (#{log_id,jdbcType=INTEGER}, #{user_id,jdbcType=INTEGER}, #{login_time,jdbcType=TIMESTAMP}, 
+      #{logout_time,jdbcType=TIMESTAMP}, #{login_ip,jdbcType=INTEGER}, #{gmt_create,jdbcType=TIMESTAMP}, 
+      #{gmt_modified,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.max.b2c.model.UserLoginLog">
+    insert into user_login_log
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="log_id != null">
+        log_id,
+      </if>
+      <if test="user_id != null">
+        user_id,
+      </if>
+      <if test="login_time != null">
+        login_time,
+      </if>
+      <if test="logout_time != null">
+        logout_time,
+      </if>
+      <if test="login_ip != null">
+        login_ip,
+      </if>
+      <if test="gmt_create != null">
+        gmt_create,
+      </if>
+      <if test="gmt_modified != null">
+        gmt_modified,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="log_id != null">
+        #{log_id,jdbcType=INTEGER},
+      </if>
+      <if test="user_id != null">
+        #{user_id,jdbcType=INTEGER},
+      </if>
+      <if test="login_time != null">
+        #{login_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="logout_time != null">
+        #{logout_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="login_ip != null">
+        #{login_ip,jdbcType=INTEGER},
+      </if>
+      <if test="gmt_create != null">
+        #{gmt_create,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gmt_modified != null">
+        #{gmt_modified,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.max.b2c.model.UserLoginLogExample" resultType="java.lang.Integer">
+    select count(*) from user_login_log
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update user_login_log
+    <set>
+      <if test="record.log_id != null">
+        log_id = #{record.log_id,jdbcType=INTEGER},
+      </if>
+      <if test="record.user_id != null">
+        user_id = #{record.user_id,jdbcType=INTEGER},
+      </if>
+      <if test="record.login_time != null">
+        login_time = #{record.login_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.logout_time != null">
+        logout_time = #{record.logout_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.login_ip != null">
+        login_ip = #{record.login_ip,jdbcType=INTEGER},
+      </if>
+      <if test="record.gmt_create != null">
+        gmt_create = #{record.gmt_create,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.gmt_modified != null">
+        gmt_modified = #{record.gmt_modified,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update user_login_log
+    set log_id = #{record.log_id,jdbcType=INTEGER},
+      user_id = #{record.user_id,jdbcType=INTEGER},
+      login_time = #{record.login_time,jdbcType=TIMESTAMP},
+      logout_time = #{record.logout_time,jdbcType=TIMESTAMP},
+      login_ip = #{record.login_ip,jdbcType=INTEGER},
+      gmt_create = #{record.gmt_create,jdbcType=TIMESTAMP},
+      gmt_modified = #{record.gmt_modified,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.max.b2c.model.UserLoginLog">
+    update user_login_log
+    <set>
+      <if test="user_id != null">
+        user_id = #{user_id,jdbcType=INTEGER},
+      </if>
+      <if test="login_time != null">
+        login_time = #{login_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="logout_time != null">
+        logout_time = #{logout_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="login_ip != null">
+        login_ip = #{login_ip,jdbcType=INTEGER},
+      </if>
+      <if test="gmt_create != null">
+        gmt_create = #{gmt_create,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gmt_modified != null">
+        gmt_modified = #{gmt_modified,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where log_id = #{log_id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.max.b2c.model.UserLoginLog">
+    update user_login_log
+    set user_id = #{user_id,jdbcType=INTEGER},
+      login_time = #{login_time,jdbcType=TIMESTAMP},
+      logout_time = #{logout_time,jdbcType=TIMESTAMP},
+      login_ip = #{login_ip,jdbcType=INTEGER},
+      gmt_create = #{gmt_create,jdbcType=TIMESTAMP},
+      gmt_modified = #{gmt_modified,jdbcType=TIMESTAMP}
+    where log_id = #{log_id,jdbcType=INTEGER}
+  </update>
+</mapper>

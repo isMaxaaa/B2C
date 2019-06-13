@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.max.b2c.mapper.SellerShopMapper">
+  <resultMap id="BaseResultMap" type="com.max.b2c.model.SellerShop">
+    <id column="shop_id" jdbcType="INTEGER" property="shop_id" />
+    <result column="seller_id" jdbcType="INTEGER" property="seller_id" />
+    <result column="shop_name" jdbcType="VARCHAR" property="shop_name" />
+    <result column="shop_addr" jdbcType="VARCHAR" property="shop_addr" />
+    <result column="shop_style" jdbcType="INTEGER" property="shop_style" />
+    <result column="gmt_create" jdbcType="TIMESTAMP" property="gmt_create" />
+    <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmt_modified" />
+    <result column="sale_category" jdbcType="INTEGER" property="sale_category" />
+    <result column="is_inblacklist" jdbcType="INTEGER" property="is_inblacklist" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    shop_id, seller_id, shop_name, shop_addr, shop_style, gmt_create, gmt_modified, sale_category, 
+    is_inblacklist
+  </sql>
+  <select id="selectByExample" parameterType="com.max.b2c.model.SellerShopExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from seller_shop
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from seller_shop
+    where shop_id = #{shop_id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from seller_shop
+    where shop_id = #{shop_id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.max.b2c.model.SellerShopExample">
+    delete from seller_shop
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.max.b2c.model.SellerShop">
+    insert into seller_shop (shop_id, seller_id, shop_name, 
+      shop_addr, shop_style, gmt_create, 
+      gmt_modified, sale_category, is_inblacklist
+      )
+    values (#{shop_id,jdbcType=INTEGER}, #{seller_id,jdbcType=INTEGER}, #{shop_name,jdbcType=VARCHAR}, 
+      #{shop_addr,jdbcType=VARCHAR}, #{shop_style,jdbcType=INTEGER}, #{gmt_create,jdbcType=TIMESTAMP}, 
+      #{gmt_modified,jdbcType=TIMESTAMP}, #{sale_category,jdbcType=INTEGER}, #{is_inblacklist,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.max.b2c.model.SellerShop">
+    insert into seller_shop
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="shop_id != null">
+        shop_id,
+      </if>
+      <if test="seller_id != null">
+        seller_id,
+      </if>
+      <if test="shop_name != null">
+        shop_name,
+      </if>
+      <if test="shop_addr != null">
+        shop_addr,
+      </if>
+      <if test="shop_style != null">
+        shop_style,
+      </if>
+      <if test="gmt_create != null">
+        gmt_create,
+      </if>
+      <if test="gmt_modified != null">
+        gmt_modified,
+      </if>
+      <if test="sale_category != null">
+        sale_category,
+      </if>
+      <if test="is_inblacklist != null">
+        is_inblacklist,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="shop_id != null">
+        #{shop_id,jdbcType=INTEGER},
+      </if>
+      <if test="seller_id != null">
+        #{seller_id,jdbcType=INTEGER},
+      </if>
+      <if test="shop_name != null">
+        #{shop_name,jdbcType=VARCHAR},
+      </if>
+      <if test="shop_addr != null">
+        #{shop_addr,jdbcType=VARCHAR},
+      </if>
+      <if test="shop_style != null">
+        #{shop_style,jdbcType=INTEGER},
+      </if>
+      <if test="gmt_create != null">
+        #{gmt_create,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gmt_modified != null">
+        #{gmt_modified,jdbcType=TIMESTAMP},
+      </if>
+      <if test="sale_category != null">
+        #{sale_category,jdbcType=INTEGER},
+      </if>
+      <if test="is_inblacklist != null">
+        #{is_inblacklist,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.max.b2c.model.SellerShopExample" resultType="java.lang.Integer">
+    select count(*) from seller_shop
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update seller_shop
+    <set>
+      <if test="record.shop_id != null">
+        shop_id = #{record.shop_id,jdbcType=INTEGER},
+      </if>
+      <if test="record.seller_id != null">
+        seller_id = #{record.seller_id,jdbcType=INTEGER},
+      </if>
+      <if test="record.shop_name != null">
+        shop_name = #{record.shop_name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.shop_addr != null">
+        shop_addr = #{record.shop_addr,jdbcType=VARCHAR},
+      </if>
+      <if test="record.shop_style != null">
+        shop_style = #{record.shop_style,jdbcType=INTEGER},
+      </if>
+      <if test="record.gmt_create != null">
+        gmt_create = #{record.gmt_create,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.gmt_modified != null">
+        gmt_modified = #{record.gmt_modified,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.sale_category != null">
+        sale_category = #{record.sale_category,jdbcType=INTEGER},
+      </if>
+      <if test="record.is_inblacklist != null">
+        is_inblacklist = #{record.is_inblacklist,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update seller_shop
+    set shop_id = #{record.shop_id,jdbcType=INTEGER},
+      seller_id = #{record.seller_id,jdbcType=INTEGER},
+      shop_name = #{record.shop_name,jdbcType=VARCHAR},
+      shop_addr = #{record.shop_addr,jdbcType=VARCHAR},
+      shop_style = #{record.shop_style,jdbcType=INTEGER},
+      gmt_create = #{record.gmt_create,jdbcType=TIMESTAMP},
+      gmt_modified = #{record.gmt_modified,jdbcType=TIMESTAMP},
+      sale_category = #{record.sale_category,jdbcType=INTEGER},
+      is_inblacklist = #{record.is_inblacklist,jdbcType=INTEGER}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.max.b2c.model.SellerShop">
+    update seller_shop
+    <set>
+      <if test="seller_id != null">
+        seller_id = #{seller_id,jdbcType=INTEGER},
+      </if>
+      <if test="shop_name != null">
+        shop_name = #{shop_name,jdbcType=VARCHAR},
+      </if>
+      <if test="shop_addr != null">
+        shop_addr = #{shop_addr,jdbcType=VARCHAR},
+      </if>
+      <if test="shop_style != null">
+        shop_style = #{shop_style,jdbcType=INTEGER},
+      </if>
+      <if test="gmt_create != null">
+        gmt_create = #{gmt_create,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gmt_modified != null">
+        gmt_modified = #{gmt_modified,jdbcType=TIMESTAMP},
+      </if>
+      <if test="sale_category != null">
+        sale_category = #{sale_category,jdbcType=INTEGER},
+      </if>
+      <if test="is_inblacklist != null">
+        is_inblacklist = #{is_inblacklist,jdbcType=INTEGER},
+      </if>
+    </set>
+    where shop_id = #{shop_id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.max.b2c.model.SellerShop">
+    update seller_shop
+    set seller_id = #{seller_id,jdbcType=INTEGER},
+      shop_name = #{shop_name,jdbcType=VARCHAR},
+      shop_addr = #{shop_addr,jdbcType=VARCHAR},
+      shop_style = #{shop_style,jdbcType=INTEGER},
+      gmt_create = #{gmt_create,jdbcType=TIMESTAMP},
+      gmt_modified = #{gmt_modified,jdbcType=TIMESTAMP},
+      sale_category = #{sale_category,jdbcType=INTEGER},
+      is_inblacklist = #{is_inblacklist,jdbcType=INTEGER}
+    where shop_id = #{shop_id,jdbcType=INTEGER}
+  </update>
+</mapper>

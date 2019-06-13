@@ -1,0 +1,58 @@
+{
+  "groups": [
+    {
+      "name": "redis",
+      "type": "com.max.b2c.item.config.JedisConfig",
+      "sourceType": "com.max.b2c.item.config.JedisConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "redis.host",
+      "type": "java.lang.String",
+      "sourceType": "com.max.b2c.item.config.JedisConfig"
+    },
+    {
+      "name": "redis.max-active",
+      "type": "java.lang.Integer",
+      "sourceType": "com.max.b2c.item.config.JedisConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "redis.max-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.max.b2c.item.config.JedisConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "redis.max-wait",
+      "type": "java.lang.Integer",
+      "sourceType": "com.max.b2c.item.config.JedisConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "redis.min-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.max.b2c.item.config.JedisConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "redis.password",
+      "type": "java.lang.String",
+      "sourceType": "com.max.b2c.item.config.JedisConfig"
+    },
+    {
+      "name": "redis.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.max.b2c.item.config.JedisConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "redis.timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.max.b2c.item.config.JedisConfig",
+      "defaultValue": 0
+    }
+  ],
+  "hints": []
+}

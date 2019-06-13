@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.max.b2c.mapper.ProductSpuMapper">
+  <resultMap id="BaseResultMap" type="com.max.b2c.model.ProductSpu">
+    <id column="product_id" jdbcType="INTEGER" property="product_id" />
+    <result column="produce_code" jdbcType="VARCHAR" property="produce_code" />
+    <result column="category_id" jdbcType="INTEGER" property="category_id" />
+    <result column="shop_id" jdbcType="INTEGER" property="shop_id" />
+    <result column="brand_id" jdbcType="INTEGER" property="brand_id" />
+    <result column="is_free_postage" jdbcType="INTEGER" property="is_free_postage" />
+    <result column="is_seckill" jdbcType="INTEGER" property="is_seckill" />
+    <result column="publish_status" jdbcType="INTEGER" property="publish_status" />
+    <result column="recommand_status" jdbcType="INTEGER" property="recommand_status" />
+    <result column="verity_status" jdbcType="INTEGER" property="verity_status" />
+    <result column="sale" jdbcType="INTEGER" property="sale" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="price" jdbcType="VARCHAR" property="price" />
+    <result column="promotion_price" jdbcType="VARCHAR" property="promotion_price" />
+    <result column="sub_title" jdbcType="VARCHAR" property="sub_title" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="gmt_create" jdbcType="TIMESTAMP" property="gmt_create" />
+    <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmt_modified" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    product_id, produce_code, category_id, shop_id, brand_id, is_free_postage, is_seckill, 
+    publish_status, recommand_status, verity_status, sale, sort, price, promotion_price, 
+    sub_title, description, gmt_create, gmt_modified
+  </sql>
+  <select id="selectByExample" parameterType="com.max.b2c.model.ProductSpuExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from product_spu
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from product_spu
+    where product_id = #{product_id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from product_spu
+    where product_id = #{product_id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.max.b2c.model.ProductSpuExample">
+    delete from product_spu
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.max.b2c.model.ProductSpu">
+    insert into product_spu (product_id, produce_code, category_id, 
+      shop_id, brand_id, is_free_postage, 
+      is_seckill, publish_status, recommand_status, 
+      verity_status, sale, sort, 
+      price, promotion_price, sub_title, 
+      description, gmt_create, gmt_modified
+      )
+    values (#{product_id,jdbcType=INTEGER}, #{produce_code,jdbcType=VARCHAR}, #{category_id,jdbcType=INTEGER}, 
+      #{shop_id,jdbcType=INTEGER}, #{brand_id,jdbcType=INTEGER}, #{is_free_postage,jdbcType=INTEGER}, 
+      #{is_seckill,jdbcType=INTEGER}, #{publish_status,jdbcType=INTEGER}, #{recommand_status,jdbcType=INTEGER}, 
+      #{verity_status,jdbcType=INTEGER}, #{sale,jdbcType=INTEGER}, #{sort,jdbcType=INTEGER}, 
+      #{price,jdbcType=VARCHAR}, #{promotion_price,jdbcType=VARCHAR}, #{sub_title,jdbcType=VARCHAR}, 
+      #{description,jdbcType=VARCHAR}, #{gmt_create,jdbcType=TIMESTAMP}, #{gmt_modified,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.max.b2c.model.ProductSpu">
+    insert into product_spu
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="product_id != null">
+        product_id,
+      </if>
+      <if test="produce_code != null">
+        produce_code,
+      </if>
+      <if test="category_id != null">
+        category_id,
+      </if>
+      <if test="shop_id != null">
+        shop_id,
+      </if>
+      <if test="brand_id != null">
+        brand_id,
+      </if>
+      <if test="is_free_postage != null">
+        is_free_postage,
+      </if>
+      <if test="is_seckill != null">
+        is_seckill,
+      </if>
+      <if test="publish_status != null">
+        publish_status,
+      </if>
+      <if test="recommand_status != null">
+        recommand_status,
+      </if>
+      <if test="verity_status != null">
+        verity_status,
+      </if>
+      <if test="sale != null">
+        sale,
+      </if>
+      <if test="sort != null">
+        sort,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="promotion_price != null">
+        promotion_price,
+      </if>
+      <if test="sub_title != null">
+        sub_title,
+      </if>
+      <if test="description != null">
+        description,
+      </if>
+      <if test="gmt_create != null">
+        gmt_create,
+      </if>
+      <if test="gmt_modified != null">
+        gmt_modified,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="product_id != null">
+        #{product_id,jdbcType=INTEGER},
+      </if>
+      <if test="produce_code != null">
+        #{produce_code,jdbcType=VARCHAR},
+      </if>
+      <if test="category_id != null">
+        #{category_id,jdbcType=INTEGER},
+      </if>
+      <if test="shop_id != null">
+        #{shop_id,jdbcType=INTEGER},
+      </if>
+      <if test="brand_id != null">
+        #{brand_id,jdbcType=INTEGER},
+      </if>
+      <if test="is_free_postage != null">
+        #{is_free_postage,jdbcType=INTEGER},
+      </if>
+      <if test="is_seckill != null">
+        #{is_seckill,jdbcType=INTEGER},
+      </if>
+      <if test="publish_status != null">
+        #{publish_status,jdbcType=INTEGER},
+      </if>
+      <if test="recommand_status != null">
+        #{recommand_status,jdbcType=INTEGER},
+      </if>
+      <if test="verity_status != null">
+        #{verity_status,jdbcType=INTEGER},
+      </if>
+      <if test="sale != null">
+        #{sale,jdbcType=INTEGER},
+      </if>
+      <if test="sort != null">
+        #{sort,jdbcType=INTEGER},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=VARCHAR},
+      </if>
+      <if test="promotion_price != null">
+        #{promotion_price,jdbcType=VARCHAR},
+      </if>
+      <if test="sub_title != null">
+        #{sub_title,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="gmt_create != null">
+        #{gmt_create,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gmt_modified != null">
+        #{gmt_modified,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.max.b2c.model.ProductSpuExample" resultType="java.lang.Integer">
+    select count(*) from product_spu
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update product_spu
+    <set>
+      <if test="record.product_id != null">
+        product_id = #{record.product_id,jdbcType=INTEGER},
+      </if>
+      <if test="record.produce_code != null">
+        produce_code = #{record.produce_code,jdbcType=VARCHAR},
+      </if>
+      <if test="record.category_id != null">
+        category_id = #{record.category_id,jdbcType=INTEGER},
+      </if>
+      <if test="record.shop_id != null">
+        shop_id = #{record.shop_id,jdbcType=INTEGER},
+      </if>
+      <if test="record.brand_id != null">
+        brand_id = #{record.brand_id,jdbcType=INTEGER},
+      </if>
+      <if test="record.is_free_postage != null">
+        is_free_postage = #{record.is_free_postage,jdbcType=INTEGER},
+      </if>
+      <if test="record.is_seckill != null">
+        is_seckill = #{record.is_seckill,jdbcType=INTEGER},
+      </if>
+      <if test="record.publish_status != null">
+        publish_status = #{record.publish_status,jdbcType=INTEGER},
+      </if>
+      <if test="record.recommand_status != null">
+        recommand_status = #{record.recommand_status,jdbcType=INTEGER},
+      </if>
+      <if test="record.verity_status != null">
+        verity_status = #{record.verity_status,jdbcType=INTEGER},
+      </if>
+      <if test="record.sale != null">
+        sale = #{record.sale,jdbcType=INTEGER},
+      </if>
+      <if test="record.sort != null">
+        sort = #{record.sort,jdbcType=INTEGER},
+      </if>
+      <if test="record.price != null">
+        price = #{record.price,jdbcType=VARCHAR},
+      </if>
+      <if test="record.promotion_price != null">
+        promotion_price = #{record.promotion_price,jdbcType=VARCHAR},
+      </if>
+      <if test="record.sub_title != null">
+        sub_title = #{record.sub_title,jdbcType=VARCHAR},
+      </if>
+      <if test="record.description != null">
+        description = #{record.description,jdbcType=VARCHAR},
+      </if>
+      <if test="record.gmt_create != null">
+        gmt_create = #{record.gmt_create,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.gmt_modified != null">
+        gmt_modified = #{record.gmt_modified,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update product_spu
+    set product_id = #{record.product_id,jdbcType=INTEGER},
+      produce_code = #{record.produce_code,jdbcType=VARCHAR},
+      category_id = #{record.category_id,jdbcType=INTEGER},
+      shop_id = #{record.shop_id,jdbcType=INTEGER},
+      brand_id = #{record.brand_id,jdbcType=INTEGER},
+      is_free_postage = #{record.is_free_postage,jdbcType=INTEGER},
+      is_seckill = #{record.is_seckill,jdbcType=INTEGER},
+      publish_status = #{record.publish_status,jdbcType=INTEGER},
+      recommand_status = #{record.recommand_status,jdbcType=INTEGER},
+      verity_status = #{record.verity_status,jdbcType=INTEGER},
+      sale = #{record.sale,jdbcType=INTEGER},
+      sort = #{record.sort,jdbcType=INTEGER},
+      price = #{record.price,jdbcType=VARCHAR},
+      promotion_price = #{record.promotion_price,jdbcType=VARCHAR},
+      sub_title = #{record.sub_title,jdbcType=VARCHAR},
+      description = #{record.description,jdbcType=VARCHAR},
+      gmt_create = #{record.gmt_create,jdbcType=TIMESTAMP},
+      gmt_modified = #{record.gmt_modified,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.max.b2c.model.ProductSpu">
+    update product_spu
+    <set>
+      <if test="produce_code != null">
+        produce_code = #{produce_code,jdbcType=VARCHAR},
+      </if>
+      <if test="category_id != null">
+        category_id = #{category_id,jdbcType=INTEGER},
+      </if>
+      <if test="shop_id != null">
+        shop_id = #{shop_id,jdbcType=INTEGER},
+      </if>
+      <if test="brand_id != null">
+        brand_id = #{brand_id,jdbcType=INTEGER},
+      </if>
+      <if test="is_free_postage != null">
+        is_free_postage = #{is_free_postage,jdbcType=INTEGER},
+      </if>
+      <if test="is_seckill != null">
+        is_seckill = #{is_seckill,jdbcType=INTEGER},
+      </if>
+      <if test="publish_status != null">
+        publish_status = #{publish_status,jdbcType=INTEGER},
+      </if>
+      <if test="recommand_status != null">
+        recommand_status = #{recommand_status,jdbcType=INTEGER},
+      </if>
+      <if test="verity_status != null">
+        verity_status = #{verity_status,jdbcType=INTEGER},
+      </if>
+      <if test="sale != null">
+        sale = #{sale,jdbcType=INTEGER},
+      </if>
+      <if test="sort != null">
+        sort = #{sort,jdbcType=INTEGER},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=VARCHAR},
+      </if>
+      <if test="promotion_price != null">
+        promotion_price = #{promotion_price,jdbcType=VARCHAR},
+      </if>
+      <if test="sub_title != null">
+        sub_title = #{sub_title,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="gmt_create != null">
+        gmt_create = #{gmt_create,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gmt_modified != null">
+        gmt_modified = #{gmt_modified,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where product_id = #{product_id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.max.b2c.model.ProductSpu">
+    update product_spu
+    set produce_code = #{produce_code,jdbcType=VARCHAR},
+      category_id = #{category_id,jdbcType=INTEGER},
+      shop_id = #{shop_id,jdbcType=INTEGER},
+      brand_id = #{brand_id,jdbcType=INTEGER},
+      is_free_postage = #{is_free_postage,jdbcType=INTEGER},
+      is_seckill = #{is_seckill,jdbcType=INTEGER},
+      publish_status = #{publish_status,jdbcType=INTEGER},
+      recommand_status = #{recommand_status,jdbcType=INTEGER},
+      verity_status = #{verity_status,jdbcType=INTEGER},
+      sale = #{sale,jdbcType=INTEGER},
+      sort = #{sort,jdbcType=INTEGER},
+      price = #{price,jdbcType=VARCHAR},
+      promotion_price = #{promotion_price,jdbcType=VARCHAR},
+      sub_title = #{sub_title,jdbcType=VARCHAR},
+      description = #{description,jdbcType=VARCHAR},
+      gmt_create = #{gmt_create,jdbcType=TIMESTAMP},
+      gmt_modified = #{gmt_modified,jdbcType=TIMESTAMP}
+    where product_id = #{product_id,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="maxa:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5e62e9f1-ff27-4efc-9944-8075ac192e42" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/b2c-mbg/target/" />
+    <ignored path="$PROJECT_DIR$/b2c-common/target/" />
+    <ignored path="$PROJECT_DIR$/b2c-search/target/" />
+    <ignored path="$PROJECT_DIR$/b2c-user/target/" />
+    <ignored path="$PROJECT_DIR$/b2c-items/target/" />
+    <ignored path="$PROJECT_DIR$/b2c-manage/target/" />
+    <ignored path="$PROJECT_DIR$/b2c-order/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="2029485778">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="3" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="69" />
+          <entry key="XML" value="31" />
+          <entry key="YAML" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="530" />
+          <entry key="XML" value="287" />
+          <entry key="YAML" value="355" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-640261595">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.240" value="1" />
+          <entry key="project.open.time.31" value="3" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.52" value="1" />
+          <entry key="project.open.time.54" value="1" />
+          <entry key="project.open.time.60" value="1" />
+          <entry key="project.open.time.90" value="1" />
+          <entry key="project.opened" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="49" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="223" />
+          <entry key="Properties" value="17" />
+          <entry key="XML" value="38" />
+          <entry key="YAML" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="8691" />
+          <entry key="PLAIN_TEXT" value="17" />
+          <entry key="Properties" value="54" />
+          <entry key="SQL" value="8" />
+          <entry key="XML" value="616" />
+          <entry key="YAML" value="137" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/dao/AttributeDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/b2c-items/src/main/resources/dao/ProductSpecsDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-741" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/b2c-items/src/test/java/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/b2c-items/src/test/java/thread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1235">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/b2c-items/src/main/resources/application-dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="68" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://E:/repo/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://E:/repo/org/springframework/spring-test/5.1.7.RELEASE/spring-test-5.1.7.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestExecutionCallbacks.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://E:/repo/org/springframework/spring-test/5.1.7.RELEASE/spring-test-5.1.7.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/b2c-mbg/src/main/java/com/max/b2c/model/ProductSpecsValue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/b2c-common/src/main/java/com/max/b2c/common/JedisConfig.java" />
+        <option value="$PROJECT_DIR$/b2c-common/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/b2c-common/src/main/java/com/max/b2c/common/util/SerializableUtil.java" />
+        <option value="$PROJECT_DIR$/b2c-user/src/main/java/com/max/b2c/util/CustomRealm.java" />
+        <option value="$PROJECT_DIR$/b2c-user/src/main/java/com/max/b2c/util/CustomCache.java" />
+        <option value="$PROJECT_DIR$/b2c-common/src/main/java/com/max/b2c/common/util/Base64ConvertUtil.java" />
+        <option value="$PROJECT_DIR$/b2c-user/src/main/java/com/max/b2c/config/JwtFilter.java" />
+        <option value="$PROJECT_DIR$/b2c-common/src/main/java/com/max/b2c/common/exception/CustomException.java" />
+        <option value="$PROJECT_DIR$/b2c-user/src/main/java/com/max/b2c/component/JwtUtil.java" />
+        <option value="$PROJECT_DIR$/b2c-common/src/main/java/com/max/b2c/common/util/PropertiesUtil.java" />
+        <option value="$PROJECT_DIR$/b2c-common/src/main/java/com/max/b2c/common/util/JedisUtil.java" />
+        <option value="$PROJECT_DIR$/b2c-user/src/main/java/com/max/b2c/service/serviceImpl/UserInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/b2c-user/src/main/java/com/max/b2c/controller/UserInfoController.java" />
+        <option value="$PROJECT_DIR$/b2c-common/src/main/java/com/max/b2c/common/config/JedisConfig.java" />
+        <option value="$PROJECT_DIR$/b2c-search/pom.xml" />
+        <option value="$PROJECT_DIR$/b2c-order/pom.xml" />
+        <option value="$PROJECT_DIR$/b2c-mbg/pom.xml" />
+        <option value="$PROJECT_DIR$/b2c-items/pom.xml" />
+        <option value="$PROJECT_DIR$/b2c-manage/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/b2c-user/pom.xml" />
+        <option value="$PROJECT_DIR$/b2c-user/src/main/java/com/max/b2c/config/JedisConfig.java" />
+        <option value="$PROJECT_DIR$/b2c-user/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/config/JedisConfig.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/util/JedisUtil.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/config/CrosFilter.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/service/BrandService.java" />
+        <option value="$PROJECT_DIR$/b2c-mbg/src/main/java/com/max/b2c/mapper/OrderCommentExample.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/controller/Categorycontroller.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/service/CategoryService.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/service/ServiceImp/CategoryServiceImp.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/controller/Brandcontroller.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/service/ServiceImp/BrandServiceImp.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/dto/ProductSpecsVo.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/dto/ProductAttributeName_Vo.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/dto/ProductAttribute_Vo.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/controller/Itemcontroller.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/service/ItemService.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/dto/Product_Vo.java" />
+        <option value="$PROJECT_DIR$/b2c-mbg/src/main/java/com/max/b2c/model/OrderCommentExample.java" />
+        <option value="$PROJECT_DIR$/b2c-mbg/src/main/java/com/max/b2c/model/OrderComment.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/service/ServiceImp/ItemServiceImp.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/dao/ProductSpecsDao.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/resources/dao/AttributeMapper.xml" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/dao/AttributeDao.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/test/java/Test.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/test/java/thread.java" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/resources/dao/ProductSpecsMapper.xml" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/b2c-items/src/main/resources/dao/ProductSpecsDao.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\repo" />
+        <option name="mavenHome" value="E:/maven/apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="E:\maven\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="b2c" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="b2c" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="b2c" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="b2c" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="b2c" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="install" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_INTERNAL" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1939" />
+    <option name="height" value="1049" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="maxb2c" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maxb2c" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maxb2c" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maxb2c" type="462c0819:PsiDirectoryNode" />
+              <item name="b2c-items" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maxb2c" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maxb2c" type="462c0819:PsiDirectoryNode" />
+              <item name="b2c-items" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maxb2c" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maxb2c" type="462c0819:PsiDirectoryNode" />
+              <item name="b2c-items" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maxb2c" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maxb2c" type="462c0819:PsiDirectoryNode" />
+              <item name="b2c-items" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maxb2c" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maxb2c" type="462c0819:PsiDirectoryNode" />
+              <item name="b2c-items" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="item" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maxb2c" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maxb2c" type="462c0819:PsiDirectoryNode" />
+              <item name="b2c-items" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="item" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maxb2c" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maxb2c" type="462c0819:PsiDirectoryNode" />
+              <item name="b2c-items" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="item" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maxb2c" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maxb2c" type="462c0819:PsiDirectoryNode" />
+              <item name="b2c-items" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="item" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maxb2c" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maxb2c" type="462c0819:PsiDirectoryNode" />
+              <item name="b2c-items" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="item" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maxb2c" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maxb2c" type="462c0819:PsiDirectoryNode" />
+              <item name="b2c-items" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="item" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="ServiceImp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maxb2c" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maxb2c" type="462c0819:PsiDirectoryNode" />
+              <item name="b2c-items" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maxb2c" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maxb2c" type="462c0819:PsiDirectoryNode" />
+              <item name="b2c-items" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maxb2c" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maxb2c" type="462c0819:PsiDirectoryNode" />
+              <item name="b2c-items" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="maxb2c" type="b2602c69:ProjectViewProjectNode" />
+              <item name="maxb2c" type="462c0819:PsiDirectoryNode" />
+              <item name="b2c-items" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="sleep&#9;PSI&#9;JAVA://java.lang.Thread#sleep" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560339252519" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\maxa\b2c-user\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.max.b2c.item.config" />
+      <recent name="com.max.b2c.item.util" />
+      <recent name="com.max.b2c.config" />
+      <recent name="com.max.b2c.common.util" />
+      <recent name="com.max.b2c.common.config" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.max.b2c.item.dto" />
+      <recent name="com.max.b2c.model" />
+      <recent name="com.max.b2c.mapper" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+    <option name="contentProportion" value="0.012995896" />
+  </component>
+  <component name="RunManager" selected="JUnit.thread.TestInsert">
+    <configuration name="Generator (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Generator" />
+      <module name="b2c-mbg" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.max.b2c.Generator" />
+      <module name="b2c-mbg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.max.b2c.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All Features in: b2c-mbg" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="3" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/b2c-mbg" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="b2c-mbg" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm3SMFormatter" />
+      <option name="SUGGESTED_NAME" value="All Features in: b2c-mbg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="thread.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="b2c-items" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="thread" />
+      <option name="METHOD_NAME" value="Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="thread.TestInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="b2c-items" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="thread" />
+      <option name="METHOD_NAME" value="TestInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItemsApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="b2c-items" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.max.b2c.item.ItemsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplicaton" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="b2c-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.max.b2c.UserApplicaton" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.53" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="maxa:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+        <file path="$PROJECT_DIR$">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </file>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_b2c" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60050" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="maxa:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.UserApplicaton" />
+      <item itemvalue="Tomcat Server.Unnamed" />
+      <item itemvalue="Spring Boot.ItemsApplication (1)" />
+      <item itemvalue="Application.Generator" />
+      <item itemvalue="Application.Generator (1)" />
+      <item itemvalue="Cucumber java.All Features in: b2c-mbg" />
+      <item itemvalue="JUnit.thread.Test" />
+      <item itemvalue="JUnit.thread.TestInsert" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.thread.TestInsert" />
+        <item itemvalue="Application.Generator" />
+        <item itemvalue="JUnit.thread.Test" />
+        <item itemvalue="Cucumber java.All Features in: b2c-mbg" />
+        <item itemvalue="Application.Generator (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e62e9f1-ff27-4efc-9944-8075ac192e42" name="Default Changelist" comment="" />
+      <created>1558344484312</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558344484312</updated>
+      <workItem from="1558344489020" duration="6030000" />
+      <workItem from="1558407199318" duration="11333000" />
+      <workItem from="1558541562898" duration="14089000" />
+      <workItem from="1558668103554" duration="13938000" />
+      <workItem from="1558711416965" duration="3694000" />
+      <workItem from="1558750257095" duration="19636000" />
+      <workItem from="1558924156595" duration="4327000" />
+      <workItem from="1558972699875" duration="47430000" />
+      <workItem from="1559490341653" duration="11165000" />
+      <workItem from="1559576975934" duration="1053000" />
+      <workItem from="1559617802922" duration="2205000" />
+      <workItem from="1559631449672" duration="4375000" />
+      <workItem from="1559662727016" duration="11802000" />
+      <workItem from="1559832903799" duration="6021000" />
+      <workItem from="1560007116081" duration="20959000" />
+      <workItem from="1560131015568" duration="6465000" />
+      <workItem from="1560246929171" duration="2179000" />
+      <workItem from="1560331139396" duration="6355000" />
+      <workItem from="1560355077881" duration="227000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="thread_Test - 2019.06.03 at 19h 35m 24s.xml">
+      <configuration name="thread.Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="thread_Test - 2019.06.03 at 19h 37m 28s.xml">
+      <configuration name="thread.Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="thread_Test - 2019.06.03 at 19h 38m 23s.xml">
+      <configuration name="thread.Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="thread_TestInsert - 2019.06.12 at 18h 57m 07s.xml">
+      <configuration name="thread.TestInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="thread_TestInsert - 2019.06.12 at 19h 04m 59s.xml">
+      <configuration name="thread.TestInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="thread_TestInsert - 2019.06.12 at 19h 05m 49s.xml">
+      <configuration name="thread.TestInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="thread_TestInsert - 2019.06.12 at 19h 06m 51s.xml">
+      <configuration name="thread.TestInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="thread_TestInsert - 2019.06.12 at 19h 07m 23s.xml">
+      <configuration name="thread.TestInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="thread_TestInsert - 2019.06.12 at 19h 07m 57s.xml">
+      <configuration name="thread.TestInsert" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="thread_TestInsert - 2019.06.12 at 19h 16m 38s.xml">
+      <configuration name="thread.TestInsert" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="193056000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989059" visible="true" weight="0.15694165" />
+      <window_info id="Structure" order="1" sideWeight="0.5010941" side_tool="true" weight="0.25285044" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3328446" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398827" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32991204" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32991204" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32991204" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3328446" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.32991204" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.271261" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Mybatis datasource" order="5" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.3293092" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/b2c-items/src/test/java/thread.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/util/JedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3781">
+          <caret line="211" column="105" selection-start-line="211" selection-start-column="105" selection-end-line="211" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-common/src/main/java/com/max/b2c/common/exception/CustomException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/repo/redis/clients/jedis/2.9.3/jedis-2.9.3.jar!/redis/clients/jedis/JedisPool.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-user/src/main/java/com/max/b2c/util/CustomSessionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-common/src/main/java/com/max/b2c/common/ServerResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-user/src/main/java/com/max/b2c/config/CrosFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-user/src/main/java/com/max/b2c/config/JwtFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3458">
+          <caret line="204" column="29" selection-start-line="193" selection-start-column="2" selection-end-line="209" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/ItemsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/config/JedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="98" column="14" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/config/CrosFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" column="71" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/service/BrandService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-mbg/src/main/java/com/max/b2c/mapper/ProductAttributeRelationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-mbg/src/main/java/com/max/b2c/mapper/OrderCommentExample.java" />
+    <entry file="file://$PROJECT_DIR$/b2c-mbg/src/main/java/com/max/b2c/mapper/OrderCommentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-mbg/src/main/java/com/max/b2c/model/ProductSpu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1102">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/service/ServiceImp/CategoryServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="131" lean-forward="true" selection-start-line="131" selection-end-line="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/controller/Categorycontroller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/service/ServiceImp/BrandServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/controller/Brandcontroller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/dto/ProductSpecsVo.java" />
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/dto/ProductAttributeName_Vo.java" />
+    <entry file="file://$PROJECT_DIR$/b2c-mbg/src/main/java/com/max/b2c/model/ProductBrandExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9946">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/service/ItemService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="6" column="52" lean-forward="true" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-mbg/src/main/java/com/max/b2c/model/CommentReplyRelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-mbg/src/main/java/com/max/b2c/model/OrderCommentExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="410" column="9" lean-forward="true" selection-start-line="410" selection-start-column="9" selection-end-line="410" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-mbg/src/main/resources/mapper/CommentReplyRelationMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4139">
+          <caret line="243" column="9" lean-forward="true" selection-start-line="243" selection-start-column="9" selection-end-line="243" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_51/src.zip!/java/util/concurrent/locks/ReentrantLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="105" column="13" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_51/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7125">
+          <caret line="402" column="42" selection-start-line="402" selection-start-column="42" selection-end-line="402" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_51/src.zip!/java/util/concurrent/locks/ReentrantReadWriteLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/service/ServiceImp/ItemServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1045">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_51/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25061">
+          <caret line="1398" column="45" selection-start-line="1398" selection-start-column="45" selection-end-line="1398" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/controller/Itemcontroller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-mbg/src/main/java/com/max/b2c/model/OrderComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="85" column="36" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/dto/Product_Vo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/dto/ProductAttribute_Vo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/resources/dao/AttributeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/dao/ProductSpecsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/java/com/max/b2c/item/dao/AttributeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/test/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/test/java/thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1235">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="68" selection-start-line="16" selection-start-column="68" selection-end-line="16" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/repo/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/repo/org/springframework/spring-test/5.1.7.RELEASE/spring-test-5.1.7.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestExecutionCallbacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/repo/org/springframework/spring-test/5.1.7.RELEASE/spring-test-5.1.7.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-mbg/src/main/java/com/max/b2c/model/ProductSpecsValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b2c-items/src/main/resources/dao/ProductSpecsDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-741" />
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>maxa:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>b2c-mbg</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.github.pagehelper:pagehelper:unknown</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

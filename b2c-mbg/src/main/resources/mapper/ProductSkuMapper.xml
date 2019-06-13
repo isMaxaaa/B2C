@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.max.b2c.mapper.ProductSkuMapper">
+  <resultMap id="BaseResultMap" type="com.max.b2c.model.ProductSku">
+    <id column="product_skuid" jdbcType="INTEGER" property="product_skuid" />
+    <result column="sku_description" jdbcType="VARCHAR" property="sku_description" />
+    <result column="stock" jdbcType="INTEGER" property="stock" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="gmt_create" jdbcType="TIMESTAMP" property="gmt_create" />
+    <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmt_modified" />
+    <result column="product_id" jdbcType="INTEGER" property="product_id" />
+    <result column="sku_code" jdbcType="VARCHAR" property="sku_code" />
+    <result column="sale" jdbcType="INTEGER" property="sale" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    product_skuid, sku_description, stock, price, gmt_create, gmt_modified, product_id, 
+    sku_code, sale
+  </sql>
+  <select id="selectByExample" parameterType="com.max.b2c.model.ProductSkuExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from product_sku
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from product_sku
+    where product_skuid = #{product_skuid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from product_sku
+    where product_skuid = #{product_skuid,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.max.b2c.model.ProductSkuExample">
+    delete from product_sku
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.max.b2c.model.ProductSku">
+    insert into product_sku (product_skuid, sku_description, stock, 
+      price, gmt_create, gmt_modified, 
+      product_id, sku_code, sale
+      )
+    values (#{product_skuid,jdbcType=INTEGER}, #{sku_description,jdbcType=VARCHAR}, #{stock,jdbcType=INTEGER}, 
+      #{price,jdbcType=DECIMAL}, #{gmt_create,jdbcType=TIMESTAMP}, #{gmt_modified,jdbcType=TIMESTAMP}, 
+      #{product_id,jdbcType=INTEGER}, #{sku_code,jdbcType=VARCHAR}, #{sale,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.max.b2c.model.ProductSku">
+    insert into product_sku
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="product_skuid != null">
+        product_skuid,
+      </if>
+      <if test="sku_description != null">
+        sku_description,
+      </if>
+      <if test="stock != null">
+        stock,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="gmt_create != null">
+        gmt_create,
+      </if>
+      <if test="gmt_modified != null">
+        gmt_modified,
+      </if>
+      <if test="product_id != null">
+        product_id,
+      </if>
+      <if test="sku_code != null">
+        sku_code,
+      </if>
+      <if test="sale != null">
+        sale,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="product_skuid != null">
+        #{product_skuid,jdbcType=INTEGER},
+      </if>
+      <if test="sku_description != null">
+        #{sku_description,jdbcType=VARCHAR},
+      </if>
+      <if test="stock != null">
+        #{stock,jdbcType=INTEGER},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=DECIMAL},
+      </if>
+      <if test="gmt_create != null">
+        #{gmt_create,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gmt_modified != null">
+        #{gmt_modified,jdbcType=TIMESTAMP},
+      </if>
+      <if test="product_id != null">
+        #{product_id,jdbcType=INTEGER},
+      </if>
+      <if test="sku_code != null">
+        #{sku_code,jdbcType=VARCHAR},
+      </if>
+      <if test="sale != null">
+        #{sale,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.max.b2c.model.ProductSkuExample" resultType="java.lang.Integer">
+    select count(*) from product_sku
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update product_sku
+    <set>
+      <if test="record.product_skuid != null">
+        product_skuid = #{record.product_skuid,jdbcType=INTEGER},
+      </if>
+      <if test="record.sku_description != null">
+        sku_description = #{record.sku_description,jdbcType=VARCHAR},
+      </if>
+      <if test="record.stock != null">
+        stock = #{record.stock,jdbcType=INTEGER},
+      </if>
+      <if test="record.price != null">
+        price = #{record.price,jdbcType=DECIMAL},
+      </if>
+      <if test="record.gmt_create != null">
+        gmt_create = #{record.gmt_create,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.gmt_modified != null">
+        gmt_modified = #{record.gmt_modified,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.product_id != null">
+        product_id = #{record.product_id,jdbcType=INTEGER},
+      </if>
+      <if test="record.sku_code != null">
+        sku_code = #{record.sku_code,jdbcType=VARCHAR},
+      </if>
+      <if test="record.sale != null">
+        sale = #{record.sale,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update product_sku
+    set product_skuid = #{record.product_skuid,jdbcType=INTEGER},
+      sku_description = #{record.sku_description,jdbcType=VARCHAR},
+      stock = #{record.stock,jdbcType=INTEGER},
+      price = #{record.price,jdbcType=DECIMAL},
+      gmt_create = #{record.gmt_create,jdbcType=TIMESTAMP},
+      gmt_modified = #{record.gmt_modified,jdbcType=TIMESTAMP},
+      product_id = #{record.product_id,jdbcType=INTEGER},
+      sku_code = #{record.sku_code,jdbcType=VARCHAR},
+      sale = #{record.sale,jdbcType=INTEGER}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.max.b2c.model.ProductSku">
+    update product_sku
+    <set>
+      <if test="sku_description != null">
+        sku_description = #{sku_description,jdbcType=VARCHAR},
+      </if>
+      <if test="stock != null">
+        stock = #{stock,jdbcType=INTEGER},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=DECIMAL},
+      </if>
+      <if test="gmt_create != null">
+        gmt_create = #{gmt_create,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gmt_modified != null">
+        gmt_modified = #{gmt_modified,jdbcType=TIMESTAMP},
+      </if>
+      <if test="product_id != null">
+        product_id = #{product_id,jdbcType=INTEGER},
+      </if>
+      <if test="sku_code != null">
+        sku_code = #{sku_code,jdbcType=VARCHAR},
+      </if>
+      <if test="sale != null">
+        sale = #{sale,jdbcType=INTEGER},
+      </if>
+    </set>
+    where product_skuid = #{product_skuid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.max.b2c.model.ProductSku">
+    update product_sku
+    set sku_description = #{sku_description,jdbcType=VARCHAR},
+      stock = #{stock,jdbcType=INTEGER},
+      price = #{price,jdbcType=DECIMAL},
+      gmt_create = #{gmt_create,jdbcType=TIMESTAMP},
+      gmt_modified = #{gmt_modified,jdbcType=TIMESTAMP},
+      product_id = #{product_id,jdbcType=INTEGER},
+      sku_code = #{sku_code,jdbcType=VARCHAR},
+      sale = #{sale,jdbcType=INTEGER}
+    where product_skuid = #{product_skuid,jdbcType=INTEGER}
+  </update>
+</mapper>

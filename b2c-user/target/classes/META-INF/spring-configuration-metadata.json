@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "spring.datasource",
+      "type": "com.max.b2c.config.ProfileConfig",
+      "sourceType": "com.max.b2c.config.ProfileConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.datasource.password",
+      "type": "java.lang.String",
+      "sourceType": "com.max.b2c.config.ProfileConfig"
+    },
+    {
+      "name": "spring.datasource.url",
+      "type": "java.lang.String",
+      "sourceType": "com.max.b2c.config.ProfileConfig"
+    },
+    {
+      "name": "spring.datasource.username",
+      "type": "java.lang.String",
+      "sourceType": "com.max.b2c.config.ProfileConfig"
+    }
+  ],
+  "hints": []
+}
